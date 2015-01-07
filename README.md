@@ -1,7 +1,7 @@
 Language Codes Conversion
 =========================
 
-Convert every existing language code to any format you want.
+This library is aimed to convert every existing language code to any format you want.
 
 Details
 -------
@@ -18,15 +18,15 @@ The **available output formats** are:
 
 3. iso639-1
 
-    The ISO 639-1 (two-letters code) language representation. Here a [complete list](http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) of ISO 639-1 codes.
+    The ISO 639-1 (two-letters code) language representation.
     
 4. iso639-2/t
 
-    The ISO 639-2/T (three-letters code) language representation.
+    The ISO 639-2/T (three-letters code for terminology applications) language representation.
 
 5. iso639-2/b
 
-    The ISO 639-2/B (three-letters code, sometime derived from english names rather than native ones) language representation.
+    The ISO 639-2/B (three-letters code, for bibliographic applications) language representation.
 
 6. iso639-3
 
@@ -38,5 +38,16 @@ Examples
 --------
 
 **WIP**
+
+References
+----------
+
+- Language codes and schemes [reference](http://en.wikipedia.org/wiki/Language_code)
+- The [ISO 639-1](http://en.wikipedia.org/wiki/ISO_639-1) standard
+- The [ISO 639-2](http://en.wikipedia.org/wiki/ISO_639-2) standard
+- The [ISO 639-3](http://en.wikipedia.org/wiki/ISO_639-3) standard
+- [List](http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) of ISO 639-1 codes
+- [List](http://en.wikipedia.org/wiki/List_of_ISO_639-2_codes) of ISO 639-2 codes
+- [List](http://en.wikipedia.org/wiki/List_of_ISO_639-3_codes) of ISO 639-3 codes
 
 ---

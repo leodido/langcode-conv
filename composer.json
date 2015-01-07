@@ -1,6 +1,6 @@
 {
   "name": "leodido/langcode-conv",
-  "description": "Convert language codes in any available format",
+  "description": "Convert language codes to any available format",
   "minimum-stability": "stable",
   "license": "ISC",
   "authors": [
