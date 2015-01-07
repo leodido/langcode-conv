@@ -18,6 +18,7 @@ class LanguageCode extends AbstractOptionsEnabledAdapter
 {
     /**
      * TODO: remove keys
+     * TODO: add language family
      * @var array
      */
     protected $languageCodes = [
@@ -600,7 +601,7 @@ class LanguageCode extends AbstractOptionsEnabledAdapter
         'ie' =>
             [
                 'name' => 'interlingue',
-                'native' => 'originally called occidental; then interlingue after wwii',
+                'native' => 'originally called occidental; then interlingue after WWII',
                 'iso639-1' => 'ie',
                 'iso639-2/t' => 'ile',
                 'iso639-2/b' => 'ile',
@@ -1481,7 +1482,7 @@ class LanguageCode extends AbstractOptionsEnabledAdapter
             ],
         'to' =>
             [
-                'name' => 'tonga (tonga islands)',
+                'name' => 'tonga', // tonga islands
                 'native' => 'faka tonga',
                 'iso639-1' => 'to',
                 'iso639-2/t' => 'ton',
