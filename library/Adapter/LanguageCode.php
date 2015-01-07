@@ -21,7 +21,7 @@ class LanguageCode extends AbstractOptionsEnabledAdapter
      * TODO: add language family
      * @var array
      */
-    protected $languageCodes = [
+    protected $languageCode = [
         'ab' =>
             [
                 'name' => 'abkhaz',
@@ -1698,7 +1698,7 @@ class LanguageCode extends AbstractOptionsEnabledAdapter
         }
         // Search $value
         $index = false;
-        foreach ($this->languageCodes as $key => $langs) {
+        foreach ($this->languageCode as $key => $langs) {
             foreach ($langs as $lang) {
                 if ($value === $lang) {
                     $index = $key;
@@ -1712,6 +1712,6 @@ class LanguageCode extends AbstractOptionsEnabledAdapter
         /** @var $opts LanguageCodeOptions */
         $opts = $this->getOptions();
 
-        return $this->languageCodes[$index][$opts->getOutput()];
+        return $this->languageCode[$index][$opts->getOutput()];
     }
 }

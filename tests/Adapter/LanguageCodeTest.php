@@ -1,4 +1,11 @@
 <?php
+/**
+ * Language code conversions
+ *
+ * @link        https://github.com/leodido/langcode-conv
+ * @copyright   Copyright (c) 2014, Leo Di Donato
+ * @license     http://opensource.org/licenses/ISC      ISC license
+ */
 namespace ConversioTest\Adapter;
 
 use Conversio\Adapter\LanguageCode;
@@ -10,14 +17,13 @@ use Conversio\Conversion;
  */
 class LanguageCodeTest extends \PHPUnit_Framework_TestCase
 {
-    /**
-     * @var Conversion
-     */
-    protected $conversion;
-
     public function setUp()
     {
-
+//        $class = new \ReflectionClass('Conversio\Adapter\LanguageCode');
+//        $property = $class->getProperty('languageCode');
+//        $property->setAccessible(true);
+//        $instance = $class->newInstance();
+//        $this->languageCode = $property->getValue($instance);
 
 //        $this->conversion = new Conversion();
 //        $this->conversion->setOptions([
@@ -41,13 +47,32 @@ class LanguageCodeTest extends \PHPUnit_Framework_TestCase
 //        $this->conversion = new Conversion(['adapter' => 'Conversio\Adapter\LanguageCode', 'adapterOptions' => ['output' => 'native']]);
     }
 
-    public function testProva()
+    public function testGetName()
     {
-        $conv1 = new Conversion();
-        $conv1->setAdapter(new LanguageCode);
-        $conv1->setAdapterOptions(new LanguageCodeOptions(['output' => 'native']));
-        $a = $conv1->filter('it');
-        var_dump($a);
+        $adapter = new LanguageCode;
+        $converter = new Conversion($adapter);
+        $this->assertEquals($adapter->getName(), $converter->getAdapterName());
+    }
+
+//    public function testConvert()
+//    {
+//        $opts = new LanguageCodeOptions;
+//        $converter = new Conversion([
+//            'adapter' => 'Conversio\Adapter\LanguageCode',
+//            'options' => $opts
+//        ]);
+//
+//        $opts->setOutput('native');
+//        $converter->filter('it');
+//    }
+
+//    public function testProva()
+//    {
+//        $conv1 = new Conversion();
+//        $conv1->setAdapter(new LanguageCode);
+//        $conv1->setAdapterOptions(new LanguageCodeOptions(['output' => 'native']));
+//        $a = $conv1->filter('it');
+//        var_dump($a);
 
 //        $conv2 = new Conversion([
 //            'adapter' => 'Conversio\Adapter\LanguageCode',
@@ -59,7 +84,6 @@ class LanguageCodeTest extends \PHPUnit_Framework_TestCase
 //        $lc->setOptions(new LanguageCodeOptions2(['output' => 'native']));
 //        $a = $lc->convert('it');
 //        var_dump($a);
-
-    }
+//    }
 
 }

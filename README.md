@@ -20,21 +20,21 @@ The **available output formats** are:
 
 3. `iso639-1`
 
-    The ISO 639-1 (two-letters code) language representation.
+    The ISO 639-1 (two-letters code) language representation
     
 4. `iso639-2/t`
 
-    The ISO 639-2/T (three-letters code for terminology applications) language representation.
+    The ISO 639-2/T (three-letters code for terminology applications) language representation
 
 5. `iso639-2/b`
 
-    The ISO 639-2/B (three-letters code, for bibliographic applications) language representation.
+    The ISO 639-2/B (three-letters code, for bibliographic applications) language representation
 
 6. `iso639-3`
 
-    The ISO 639-3 (same as ISO 639-2/T except that for the macrolanguages) language representation.
+    The ISO 639-3 (same as ISO 639-2/T except that for the macrolanguages) language representation
 
-Currently **184** languages are fully supported.
+Currently **184 languages** are fully supported.
 
 Examples
 --------
