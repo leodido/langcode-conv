@@ -1,6 +1,8 @@
 Language Codes Conversion
 =========================
 
+[![Latest Stable Version](http://img.shields.io/packagist/v/leodido/langcode-conv.svg?style=flat-square)](https://packagist.org/packages/leodido/langcode-conv) [![Build Status](https://img.shields.io/travis/leodido/langcode-conv.svg?style=flat-square)](https://travis-ci.org/leodido/langcode-conv) [![Coverage](http://img.shields.io/coveralls/leodido/langcode-conv.svg?style=flat-square)](https://coveralls.io/r/leodido/langcode-conv)
+
 This library is aimed to convert every existing language code to any format you want.
 
 Details
@@ -51,3 +53,5 @@ References
 - [List](http://en.wikipedia.org/wiki/List_of_ISO_639-3_codes) of ISO 639-3 codes
 
 ---
+
+[![Analytics](https://ga-beacon.appspot.com/UA-49657176-1/langcode-conv)](https://github.com/igrigorik/ga-beacon)
