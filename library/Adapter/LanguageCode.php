@@ -20,7 +20,7 @@ class LanguageCode extends AbstractOptionsEnabledAdapter
      * TODO: remove keys
      * @var array
      */
-    private $languageCodes = [
+    protected $languageCodes = [
         'ab' =>
             [
                 'name' => 'abkhaz',

@@ -1,7 +1,7 @@
 {
   "name": "leodido/langcode-conv",
-  "description": "Convert language codes in any available form",
-  "minimum-stability": "dev",
+  "description": "Convert language codes in any available format",
+  "minimum-stability": "stable",
   "license": "ISC",
   "authors": [
     {
@@ -30,8 +30,8 @@
     "converter",
     "library",
     "iso639-1",
-    "iso639-2/t",
-    "iso639-2/b",
+    "iso639-2t",
+    "iso639-2b",
     "iso639-3",
     "native",
     "name"

@@ -11,7 +11,7 @@ namespace Conversio\Adapter\Options;
 /**
  * Class LanguageCodeOptions
  */
-class LanguageCodeOptions extends AbstractOptionsMap
+class LanguageCodeOptions extends OptionsMap
 {
     protected $config = [
         'output' => ['name', 'native', 'iso639-1', 'iso639-2/t', 'iso639-2/b', 'iso639-3']
