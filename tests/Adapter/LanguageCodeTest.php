@@ -17,73 +17,31 @@ use Conversio\Conversion;
  */
 class LanguageCodeTest extends \PHPUnit_Framework_TestCase
 {
-    public function setUp()
-    {
-//        $class = new \ReflectionClass('Conversio\Adapter\LanguageCode');
-//        $property = $class->getProperty('languageCode');
-//        $property->setAccessible(true);
-//        $instance = $class->newInstance();
-//        $this->languageCode = $property->getValue($instance);
-
-//        $this->conversion = new Conversion();
-//        $this->conversion->setOptions([
-//            'options' => $opts,
-//            'adapter' => new LanguageCode(),
-//        ]);
-
-//        $this->conversion = new Conversion([
-//            'adapter' => '',
-//            'adapterOptions' => ''
-//        ]);
-
-//        $this->conversion = new Conversion();
-//        $this->conversion->setAdapterOptions($opts);
-//        $this->conversion->setAdapter('Conversio\Adapter\LanguageCode');
-
-//        $this->conversion = new Conversion('Conversio\Adapter\LanguageCode');
-//        $this->conversion->setAdapterOptions($opts);
-//        $this->conversion->getAdapter()->setOptions($opts);
-
-//        $this->conversion = new Conversion(['adapter' => 'Conversio\Adapter\LanguageCode', 'adapterOptions' => ['output' => 'native']]);
-    }
-
     public function testGetName()
     {
         $adapter = new LanguageCode;
         $converter = new Conversion($adapter);
+        $this->assertInternalType('string', $adapter->getName());
         $this->assertEquals($adapter->getName(), $converter->getAdapterName());
     }
 
-//    public function testConvert()
-//    {
-//        $opts = new LanguageCodeOptions;
-//        $converter = new Conversion([
-//            'adapter' => 'Conversio\Adapter\LanguageCode',
-//            'options' => $opts
-//        ]);
-//
-//        $opts->setOutput('native');
-//        $converter->filter('it');
-//    }
+    public function testConvert()
+    {
+        $opts = new LanguageCodeOptions;
+        $adapter = new LanguageCode;
+        $adapter->setOptions($opts);
 
-//    public function testProva()
-//    {
-//        $conv1 = new Conversion();
-//        $conv1->setAdapter(new LanguageCode);
-//        $conv1->setAdapterOptions(new LanguageCodeOptions(['output' => 'native']));
-//        $a = $conv1->filter('it');
-//        var_dump($a);
+        // Not string input
+        $this->assertNull($adapter->convert(1));
 
-//        $conv2 = new Conversion([
-//            'adapter' => 'Conversio\Adapter\LanguageCode',
-//            'adapterOptions' => new LanguageCodeOptions2(['output' => 'native'])
-//        ]);
-//        $conv2->filter('it');
+        // Inexistent language code
+        $opts->setOutput('name');
+        $res = $adapter->convert('inexistent');
+        $this->assertNull($res);
 
-//        $lc = new LanguageCode();
-//        $lc->setOptions(new LanguageCodeOptions2(['output' => 'native']));
-//        $a = $lc->convert('it');
-//        var_dump($a);
-//    }
-
+        $opts->setOutput('native');
+        $res = $adapter->convert('it');
+        $this->assertEquals('italiano', $res);
+        $this->assertInternalType('string', $res);
+    }
 }
