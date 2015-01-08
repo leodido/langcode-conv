@@ -36,7 +36,6 @@ class LanguageCodeOptions extends OptionsMap
      */
     public function getOutput()
     {
-        // FIXME? needed a getOption('output') method in conversion lib that secures the retrieving of option value
-        return $this->options['output'];
+        return $this->getOption('output');
     }
 }
