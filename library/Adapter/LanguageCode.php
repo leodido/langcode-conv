@@ -17,8 +17,8 @@ use Conversio\Exception;
 class LanguageCode extends AbstractOptionsEnabledAdapter
 {
     /**
-     * TODO: remove keys
      * TODO: add language family
+     *
      * @var array
      */
     protected $languageCode = [
