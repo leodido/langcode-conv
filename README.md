@@ -79,6 +79,13 @@ Have fun, try other language codes (e.g., `vie`, `tam`).
 // ISO 639-2/T => NATIVE
 $converter->filter('vie'); // tiếng việt
 $converter->filter('tam'); // தமிழ்
+// ISO 639-3 => NATIVE
+$converter->filter('yid + 2'); // ייִדיש
+// ISO 639-3 => NAME
+$options->setOutput('name');
+$converter->filter('vie'); // vietnamese
+$converter->filter('tam'); // tamil
+$converter->filter('yid + 2'); // yiddish
 ```
 
 Installation
