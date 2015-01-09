@@ -67,7 +67,7 @@ Finally we need to specify the desired output format (see above the supported fo
 
 ```php
 $options->setOutput('native');
-$converter->filter('it');
+$converter->filter('it'); // italiano
 ```
 
 Which ouputs, in this case `italiano`.
