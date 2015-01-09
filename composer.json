@@ -12,12 +12,11 @@
   ],
   "require": {
     "php": ">=5.4",
-    "leodido/conversio": "0.1.1"
+    "leodido/conversio": "~0.2.0"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.2",
-    "satooshi/php-coveralls": "dev-master",
-    "leodido/conversio": "dev-develop"
+    "satooshi/php-coveralls": "dev-master"
   },
   "autoload": {
     "psr-4": {

@@ -3,7 +3,7 @@ Language Codes Converter
 
 [![Latest Stable Version](http://img.shields.io/packagist/v/leodido/langcode-conv.svg?style=flat-square)](https://packagist.org/packages/leodido/langcode-conv) [![Build Status](https://img.shields.io/travis/leodido/langcode-conv.svg?style=flat-square)](https://travis-ci.org/leodido/langcode-conv) [![Coverage](http://img.shields.io/coveralls/leodido/langcode-conv.svg?style=flat-square)](https://coveralls.io/r/leodido/langcode-conv)
 
-This library is aimed to convert every existing language code to any format you want.
+This library, based on [conversio library](https://github.com/leodido/conversio), is aimed to convert every existing language code to any format you want. No matter which format the input language code is.
 
 Details
 -------
@@ -39,7 +39,40 @@ Currently **184 languages** are fully supported.
 Examples
 --------
 
-**WIP**
+First of all you need to create the conversion adapter and its options class.
+
+```php
+use Conversio\Conversion;
+use Conversio\Adapter\LanguageCode;
+use Conversio\Adapter\Options\LanguageCode;
+// ...
+$adapter = new LanguageCode();
+$options = new LanguageCodeOptions();
+```
+
+Then, you can pass it to the `Conversion` class constructor (from [conversio library](https://github.com/leodido/conversio)):
+
+```php
+$converter = new Conversion($adapter);
+$converter->setAdapterOptions($options);
+```
+
+Or, compactly:
+
+```php
+$converter = new Conversion(['adapter' => $adapter, 'options' => $options]);
+```
+
+Finally we need to specify the desired output format (see above the supported formats) of the conversion and perform it.
+
+```php
+$options->setOutput('native');
+$converter->filter('it');
+```
+
+Which ouputs, in this case `italiano`.
+
+Have fun, try other language codes (e.g., `vie`, `tam`).
 
 References
 ----------
