@@ -74,6 +74,19 @@ Which ouputs, in this case `italiano`.
 
 Have fun, try other language codes (e.g., `vie`, `tam`).
 
+Installation
+------------
+
+Add `leodido/langcode-conv` to your `composer.json`.
+
+```json
+{
+   "require": {
+       "leodido/langcode-conv": "v0.2.0"
+   }
+}
+```
+
 References
 ----------
 
