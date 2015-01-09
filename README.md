@@ -67,12 +67,19 @@ Finally we need to specify the desired output format (see above the supported fo
 
 ```php
 $options->setOutput('native');
+// ISO 639-1 => NATIVE
 $converter->filter('it'); // italiano
 ```
 
 Which ouputs, in this case `italiano`.
 
 Have fun, try other language codes (e.g., `vie`, `tam`).
+
+```php
+// ISO 639-2/T => NATIVE
+$converter->filter('vie'); // tiếng việt
+$converter->filter('tam'); // தமிழ்
+```
 
 Installation
 ------------
