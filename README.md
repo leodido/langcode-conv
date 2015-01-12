@@ -5,39 +5,10 @@ Language Codes
 
 This library, based on [conversio library](https://github.com/leodido/conversio), is aimed to convert every existing language code to any format you want. No matter which format the input language code is.
 
-Details
--------
-
-The **available output formats** are:
-
-1. `name`
-
-    The international (often english) name of the language
-
-2. `native`
-
-    The language name written in native representation/s
-
-3. `iso639-1`
-
-    The ISO 639-1 (two-letters code) language representation
-    
-4. `iso639-2/t`
-
-    The ISO 639-2/T (three-letters code for terminology applications) language representation
-
-5. `iso639-2/b`
-
-    The ISO 639-2/B (three-letters code, for bibliographic applications) language representation
-
-6. `iso639-3`
-
-    The ISO 639-3 (same as ISO 639-2/T except that for the macrolanguages) language representation
-
-Currently **184 languages** are fully supported.
-
 Examples
 --------
+
+Let's see some simple usage examples ...
 
 First of all you need to create the conversion adapter and its options class.
 
@@ -87,6 +58,37 @@ $converter->filter('vie'); // vietnamese
 $converter->filter('tam'); // tamil
 $converter->filter('yid + 2'); // yiddish
 ```
+
+Details
+-------
+
+The **available output formats** are:
+
+1. `name`
+
+    The international (often english) name of the language
+
+2. `native`
+
+    The language name written in native representation/s
+
+3. `iso639-1`
+
+    The ISO 639-1 (two-letters code) language representation
+    
+4. `iso639-2/t`
+
+    The ISO 639-2/T (three-letters code for terminology applications) language representation
+
+5. `iso639-2/b`
+
+    The ISO 639-2/B (three-letters code, for bibliographic applications) language representation
+
+6. `iso639-3`
+
+    The ISO 639-3 (same as ISO 639-2/T except that for the macrolanguages) language representation
+
+Currently **184 languages** are fully supported.
 
 Installation
 ------------
