@@ -1,5 +1,5 @@
-Language Codes Converter
-========================
+Language Codes
+==============
 
 [![Latest Stable Version](http://img.shields.io/packagist/v/leodido/langcode-conv.svg?style=flat-square)](https://packagist.org/packages/leodido/langcode-conv) [![Build Status](https://img.shields.io/travis/leodido/langcode-conv.svg?style=flat-square)](https://travis-ci.org/leodido/langcode-conv) [![Coverage](http://img.shields.io/coveralls/leodido/langcode-conv.svg?style=flat-square)](https://coveralls.io/r/leodido/langcode-conv)
 

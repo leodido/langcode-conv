@@ -33,6 +33,10 @@
     "iso639-2t",
     "iso639-2b",
     "iso639-3",
+    "language",
+    "languages",
+    "language code",
+    "codes",
     "native",
     "name"
   ]
