@@ -96,7 +96,7 @@ Add `leodido/langcode-conv` to your `composer.json`.
 ```json
 {
    "require": {
-       "leodido/langcode-conv": "v0.2.0"
+       "leodido/langcode-conv": "v0.3.0"
    }
 }
 ```
